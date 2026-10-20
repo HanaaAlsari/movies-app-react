@@ -1,6 +1,6 @@
 
 import { useMovieContext } from './context/GlobalContext';
-import Moviecard from './Moviecard';
+import Moviecard from './MovieCard';
 import  './Watched.css'
 
 function Watched() {

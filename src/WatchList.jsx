@@ -1,6 +1,6 @@
 
 import { useMovieContext } from './context/GlobalContext';
-import MovieCard from './MovieCard';
+import MovieCard from './MovieCard.jsx';
 import './WatchList.css'
 
 const Watchlist = () => {
