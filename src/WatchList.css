@@ -1,0 +1,43 @@
+/* ضبط كارت الفيلم ليرتب عناصره بشكل عمودي */
+.movie-card {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    position: relative !important;
+    height: 100% !important;
+}
+
+/* إجبار الأزرار السوداء على النزول أسفل البوستر */
+.inner-card-controls {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    background-color: #333333 !important;
+    padding: 10px 0 !important;
+    width: 100% !important;
+    
+    /* إلغاء الـ absolute والـ hover القديم تماماً */
+    position: static !important;           
+    transform: none !important;
+    bottom: auto !important;
+    left: auto !important;
+    opacity: 1 !important; /* لكي تظل ظاهرة دائماً تحت الفيلم */
+}
+
+/* ضبط حجم الأيقونات الصغيرة بداخلها */
+.ctrl-btn {
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.ctrl-btn svg {
+    font-size: 16px !important;
+}

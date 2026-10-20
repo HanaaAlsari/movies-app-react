@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+.hh{
+  margin: 0;
+  
+  direction: ltr;
+}
+.search-container {
+  display: flex;
+  justify-content: center; /* يضع العنصر في المنتصف أفقياً */
+  align-items: center;     /* يضمن المحاذاة الشاقولية */
+  margin-top: 20px;        /* يترك مسافة أمان أسفل الشريط الأخضر */
+  width: 100%;             /* يضمن امتداد المساحة على كامل الشاشة */
+}
+
+/* اختيارياً: لتحسين مظهر حقل الإدخال ليصبح معاصراً */
+.search-container input {
+  padding: 10px 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}

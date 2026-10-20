@@ -1,0 +1,130 @@
+/* الحاوية الخارجية لصفحة الـ Watched */
+.watched {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* حاوية المحتوى للتوسط */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* الهيدر العلوي المشابه تماماً للصورة */
+.main-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.main-heading h1 {
+    font-size: 24px;
+    color: #032541;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* عداد الأفلام (البادج الأزرق) */
+.movies-count {
+    background-color: #21d4fd;
+    color: #032541;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* شبكة كروت الأفلام المتوازية المنتظمة (Grid) */
+.movie-grid {
+    display: grid;
+    /* ينشئ أعمدة تتكيف تلقائياً مثل صفحة الـ Watchlist */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px; 
+    padding: 10px 0;
+}
+
+/* 🌟 تنسيق كارت الفيلم لترتيب الصورة والأزرار عمودياً */
+.movie-card {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+/* تنسيق حاوية البوستر */
+.poster-wrapper {
+    width: 100% !important;
+    height: 330px !important; /* ارتفاع ثابت لضمان تساوي أحجام الكروت */
+    background-color: #f4f4f4 !important;
+    overflow: hidden !important;
+}
+
+.poster-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* التنسيق الاحتياطي في حال عدم وجود بوستر */
+.filter-poster {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #f0f0f0 !important;
+}
+
+/* 🌟 شريط التحكم الأسفل الممسك بالأيقونات العين والـ X */
+.inner-card-controls {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    background-color: #333333 !important; /* نفس الشريط الأسود في الصورة */
+    padding: 12px 0 !important;
+    width: 100% !important;
+    margin-top: auto !important; /* يضمن بقاء الشريط ملتصقاً بالقاع */
+    
+    /* إلغاء أي طفو قديم */
+    position: static !important;
+    transform: none !important;
+    bottom: auto !important;
+    left: auto !important;
+    opacity: 1 !important;
+}
+
+/* تنسيق أزرار الأيقونات بداخل الشريط الأسود */
+.ctrl-btn {
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    padding: 2px !important;
+    transition: color 0.2s ease;
+}
+
+.ctrl-btn:hover {
+    color: #21d4fd !important; /* تلوين الأيقونة عند التمرير */
+}
+
+/* رسالة القائمة الفارغة */
+.no-movies {
+    color: #c0c0c0;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}

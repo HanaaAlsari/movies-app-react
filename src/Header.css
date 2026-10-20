@@ -1,0 +1,38 @@
+.add-button {
+  border: 2px solid #000000;   /* لون الحواف */
+  border-radius: 20px;         /* يجعل الحواف دائرية مثل الزر الأزرق */
+  padding: 6px 15px;           /* مسافة مناسبة داخل الزر */
+  text-decoration: none;       /* إزالة الخط السفلي */
+  color: black;                /* لون النص */
+  font-weight: bold;           /* جعل الخط عريضاً */
+  display: inline-block;       /* لضمان تطبيق الأبعاد بشكل صحيح */
+}
+
+/* تأثير عند تمرير الفأرة فوق الزر */
+.add-button:hover {
+  background-color: black;     /* يتغير لون الخلفية عند التمرير */
+  color: #7fff00;              /* يتغير لون النص إلى لون شريط التنقل الأخضر */
+}
+/* 1. الحاوية المشتركة التي تحتوي على الأزرار الثلاثة */
+.navbar-links {
+  display: flex;          /* تفعيل نظام الفليكس لصف العناصر أفقياً */
+  align-items: center;    /* محاذاة جميع العناصر عمودياً على نفس السوية تماماً */
+  gap: 15px;              /* تحديد مسافة ثابتة ومتناسقة بين كل زر والآخر */
+}
+
+/* 2. التنسيق الموحد لجميع الأزرار */
+.nav-btn {
+  display: inline-flex;   /* يضمن بقاء النص بمنتصف الزر تماماً */
+  align-items: center;    
+  justify-content: center;
+  
+  border: 2px solid black;/* توحيد الحدود */
+  border-radius: 20px;    /* توحيد الحواف الدائرية */
+  padding: 6px 18px;      /* توحيد المساحة الداخلية ليكون لها نفس الارتفاع */
+  height: 35px;           /* تحديد ارتفاع ثابت يضمن عدم تفاوت الأزرار */
+  box-sizing: border-box; /* يضمن حساب الحدود والمسافات ضمن الارتفاع الثابت */
+  
+  text-decoration: none;  /* إزالة الخط السفلي للروابط */
+  color: black;           /* لون النص أسود موحد */
+  font-weight: bold;      
+}
